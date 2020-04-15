@@ -1,0 +1,11 @@
+{
+  "name": "pro-jects_api",
+  "version": "1.0.0",
+  "description": "Simple serverless function for authorization of (pro)jects app",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@now/node": "^1.5.1",
+    "now": "^18.0.0"
+  }
+}
