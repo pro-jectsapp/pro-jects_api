@@ -7,5 +7,9 @@
   "devDependencies": {
     "@now/node": "^1.5.1",
     "now": "^18.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
   }
 }
