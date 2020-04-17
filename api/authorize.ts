@@ -6,9 +6,9 @@ const config = {
   client_secret: process.env.CLIENT_SECRET,
 };
 
-console.log(process.env.CLIENT_SECRET);
+export default async (req: NowRequest, res: NowResponse) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
 
-export default (req: NowRequest, res: NowResponse) => {
   if (!req.query.code) {
     res.status(400).json({ error: 'No auth code passed' });
   }
