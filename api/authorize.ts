@@ -14,10 +14,16 @@ export default async (req: NowRequest, res: NowResponse) => {
   }
 
   axios
-    .post('https://github.com/login/oauth/access_token', {
-      ...config,
-      code: req.query.code,
-    })
+    .post(
+      'https://github.com/login/oauth/access_token',
+      {
+        ...config,
+        code: req.query.code,
+      },
+      {
+        headers: { Accept: 'application/json' },
+      },
+    )
     .then(({ data }) => {
       res.json(data);
     });
