@@ -2,7 +2,7 @@ import { NowRequest, NowResponse } from '@now/node';
 import axios from 'axios';
 
 const config = {
-  client_id: '9031bbfc20036dd75d11',
+  client_id: '435bb3ee9ba9d983cb60',
   client_secret: process.env.CLIENT_SECRET,
 };
 
